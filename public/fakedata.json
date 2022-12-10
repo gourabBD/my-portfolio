@@ -1,0 +1,43 @@
+[
+    {
+       
+        "service_id": "01",
+        "title": "Reseller",
+        "img": "https://i.ibb.co/wY7q6Fc/reseller2.png",
+        "liveSite":"https://resale-client-f79f2.web.app/",
+        "gitClient": "https://github.com/gourabBD/reseller-client",
+        "gitServer": "https://github.com/gourabBD/reseller-server",
+        "description": "A mobile selling site.Normally Used mobiles are sold here. New mobiles also can be sold here. This project is consist of three panels Admin,Seller,Buyer.Buyers can buy the mobiles that are available on the site. Seller can post and advertise the mobile they want to sell.Admin can delete users,create admin,verify the seller.",
+        "frontEnd": "React JS, HTML5, CSS3, Tailwind CSS, Daisy UI.",
+        "backEnd": "MongoDB CRUD operation, Firebase-Authentication, Live API data."
+        
+    },
+    {
+       
+        "service_id": "02",
+        "title": "Tuition Me",
+        "img": "https://i.ibb.co/kqPX8CX/tuition.png",
+        "liveSite":"https://tuition-me.web.app/",
+        "gitClient": "https://github.com/gourabBD/tuition-me-client",
+        "gitServer": "https://github.com/gourabBD/tuition-me-server",
+        "description": "Tuition Me is basically a feedback or review giving site based on the courses. It is designed for only one teacher or person ,about whom people will review based on his courses. User can edit the review and can delete the reviews. Mainly shown the CRUD operation.",
+        "frontEnd": "React JS, HTML5, CSS3, Bootstrap 5.",
+        "backEnd": "MongoDB CRUD operation, Firebase-Authentication."
+
+        
+    },
+    {
+       
+        "service_id": "03",
+        "title": "Dragon News",
+        "img": "https://i.ibb.co/nnNj0HP/Dragonnews.png",
+        "liveSite":"https://dragon-news-585b2.web.app/",
+        "gitClient": "https://github.com/gourabBD/dragon-news-client",
+        "gitServer": "https://github.com/gourabBD/dragon-news-server",
+        "description": "Dragon News is a news portal site. Where all news are distributed to its own categories and also have firebase authentication functionalities with email and google signIn. Fetching data from API and making the API a global API.",
+        "frontEnd": "React JS, HTML5, CSS3, Bootstrap 5.",
+        "backEnd": "Firebase-Authentication, Live API data."
+        
+    }
+    
+]

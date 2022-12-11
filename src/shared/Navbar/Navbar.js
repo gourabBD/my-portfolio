@@ -26,24 +26,42 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
+          <li>
+            <Link to={'/'}>Home</Link>
+          </li>
+           <li>
+            <a href="/#aboutme"> About Me</a>
+          </li>
             <li>
-              <a href="#projectsID"> Projects</a>
+            <a href="/#projectsID"> Projects</a>
             </li>
 
             <li>
-              <a href="#contactMeID">Contact Me</a>
+            <a href="/#contactMeID">Contact Me</a>
             </li>
+            <li>
+            <Link to={'/blogs'}>Blogs</Link>
+          </li>
           </ul>
         </div>
       </div>
       <div className="navbar-end hidden lg:flex mx-10 p-3">
         <ul className="menu menu-horizontal px-1">
+        <li>
+            <Link to={'/'}>Home</Link>
+          </li>
           <li>
-            <a href="#projectsID"> Projects</a>
+            <a href="/#aboutme"> About Me</a>
+          </li>
+          <li>
+            <a href="/#projectsID"> Projects</a>
           </li>
 
           <li>
-            <a href="#contactMeID">Contact Me</a>
+            <a href="/#contactMeID">Contact Me</a>
+          </li>
+          <li>
+            <Link to={'/blogs'}>Blogs</Link>
           </li>
         </ul>
       </div>

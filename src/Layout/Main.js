@@ -11,11 +11,9 @@ const Main = () => {
       <Navbar></Navbar>
       <Outlet></Outlet>
 
-      <Projects></Projects>
+      
 
-      <div className="flex justify-center">
-        <ContactMe></ContactMe>
-      </div>
+    
       <Footer></Footer>
     </div>
   );

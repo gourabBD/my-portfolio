@@ -9,10 +9,10 @@ const ContactMe = () => {
       id="contactMeID"
     >
       <h1 className="text-2xl my-5">Contact Me</h1>
-      <div className="grid my-5">
+      <div className="grid my-5 p-2">
         <div className=" my-5  flex align-middle justify-center">
           <input
-            className="w-1/3 p-2 border border-primary rounded-lg"
+            className="lg:w-1/3 md:w-2/3 sm:w-2/3 w-full p-2 border border-primary rounded-lg"
             type="email"
             name="email"
             placeholder="Enter your email"
@@ -21,14 +21,14 @@ const ContactMe = () => {
 
         <div className="my-5  flex align-middle justify-center">
           <textarea
-            className="w-1/3 p-5 border border-primary rounded-lg"
+            className="lg:w-1/3 md:w-2/3 sm:w-2/3 w-full p-5 border border-primary rounded-lg"
             name="message"
             placeholder="Enter your message"
           ></textarea>
         </div>
 
         <div className="flex justify-center">
-          <button className="btn btn-primary w-1/6" type="submit">
+          <button className="btn btn-primary lg:w-1/3 md:w-2/3 sm:w-2/3 w-full" type="submit">
             Send
           </button>
         </div>

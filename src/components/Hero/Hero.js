@@ -7,12 +7,12 @@ import Projects from "../Projects/Projects";
 import ContactMe from "../ContactMe/ContactMe";
 import Skills from "../skills/Skills";
 import AboutME from "../Aboutme/AboutME";
-
+import { TypeAnimation } from 'react-type-animation';
 const Hero = () => {
   return (
-    <div className="overflow-x-hidden">
+    <div  className="overflow-x-hidden ">
       <div className="hero min-h-screen bg-base-200 ">
-        <div data-aos="fade-up" className="hero-content h-full w-full">
+        <div data-aos="fade-up" className="hero-content h-full flex flex-col lg:flex-row w-full">
           <Particles
             className="border border-primary "
             id="config"
@@ -25,14 +25,14 @@ const Hero = () => {
               opacity: "0.5",
             }}
           />
-          <div className="avatar">
+          <div className="avatar  ">
             <div
               data-aos="zoom-in"
               data-aos-duration="1000"
               data-aos-delay="50"
-              className="lg:w-96 md:w-48 sm:w-32 xs: w-auto rounded-full ring ring-primary ring-offset-base-100 ring-offset-2"
+              className="w-auto rounded-full  "
             >
-              <img src={myself} />
+              <img  src={myself} />
             </div>
           </div>
           <div
@@ -41,11 +41,27 @@ const Hero = () => {
             data-aos-duration="1500"
             className="text-left"
           >
-            <h1 className="text-5xl font-bold">I'm Gourab Roy.</h1>
-            <p className="py-6">
-              I am a front-end developer. I like to craft solid and scalable
-              front-end products with great user experiences.
-            </p>
+           <TypeAnimation 
+      sequence={[
+        `I'm Gourab Roy.`, // Types 'One'
+        1000, // Waits 1s
+        '', // Deletes 'One' and types 'Two'
+      
+      
+        
+      ]}
+      wrapper="div"
+      cursor={true}
+      repeat={Infinity}
+      style={{ fontSize: '2em' }}
+      className="text-5xl  font-bold w-auto"
+    />
+            {/* <h1 className="text-5xl w-auto font-bold"></h1> */}
+          
+    <p className="py-6">I am a front-end developer. I like to craft solid and scalable
+              front-end products with great user experiences.</p>
+            
+           
 
             <div className="w-full flex justify-left my-5">
               <a

@@ -2,17 +2,24 @@ import React from "react";
 import { FaGithub, FaLink } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import ProjectDetails from './../projectDetails/ProjectDetails';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
 
 const ProjectsCards = ({ product }) => {
   const { description, gitServer, gitClient, liveSite, img, title,_id } = product;
   return (
     <div
       data-aos="flip-right"
-      className="card w-auto bg-base-100 shadow-xl border border-primary"
+      className="card rounded-none w-auto bg-base-100 shadow-xl border border-primary"
     >
+     <PhotoProvider>
+     <PhotoView src={img}>
+
       <figure>
-        <img className="w-full" src={img} alt="Shoes" />
+        <img style={{height:"15rem"}} className="w-full" src={img} alt="Shoes" />
       </figure>
+     </PhotoView>
+     </PhotoProvider>
       <div className="card-body text-left">
         <h2 className="card-title">{title}</h2>
         <p>{description?.slice(0, 105)}... </p>

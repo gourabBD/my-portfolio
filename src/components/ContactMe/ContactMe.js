@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactMe = () => {
   return (
-    <form
+    <form 
       className="bg-base-300 w-full "
       action="https://formspree.io/f/xyyvrlyb"
       method="POST"

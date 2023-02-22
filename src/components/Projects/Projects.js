@@ -14,7 +14,7 @@ const Projects = () => {
   }, []);
   return (
     <div className="" id="projectsID">
-      <h1 className="text-2xl m-10">Projects</h1>
+      <h1 className="text-2xl m-10">Recent Projects</h1>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 p-2">
         {projects?.map((pro) => (
           <ProjectsCards key={pro?._id} product={pro}></ProjectsCards>

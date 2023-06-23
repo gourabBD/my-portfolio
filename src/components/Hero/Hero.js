@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <div  className="overflow-x-hidden ">
       <div className="hero min-h-screen bg-base-200 ">
-        <div data-aos="fade-up" className="hero-content h-full flex flex-col lg:flex-row w-full">
+        <div data-aos="fade-up" className="hero-content h-full flex flex-col lg:flex-row w-full ">
           <Particles
             className="border border-primary "
             id="config"
@@ -20,9 +20,9 @@ const Hero = () => {
             style={{
               width: "100%",
               height: "100%",
-
-              backgroundColor: "black",
-              opacity: "0.5",
+              
+              backgroundColor: "#265dbd",
+              opacity: ".6",
             }}
           />
           <div className="avatar  ">
@@ -58,7 +58,7 @@ const Hero = () => {
     />
             {/* <h1 className="text-5xl w-auto font-bold"></h1> */}
           
-    <p className="py-6">I am a front-end developer. I like to craft solid and scalable
+    <p className="py-6 text-black font-semibold">I am a MERN Stack developer and a front-end developer as well. I like to craft solid and scalable MERN Stack and
               front-end products with great user experiences.</p>
             
            

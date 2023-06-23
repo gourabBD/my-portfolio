@@ -10,7 +10,7 @@ const ProjectsCards = ({ product }) => {
   return (
     <div
       data-aos="flip-right"
-      className="card rounded-none w-auto bg-base-100 shadow-xl border border-primary"
+      className="card rounded-none w-auto bg-base-100 shadow-2xl  border border-primary"
     >
      <PhotoProvider>
      <PhotoView src={img}>

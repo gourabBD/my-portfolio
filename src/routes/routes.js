@@ -22,7 +22,7 @@ export const router = createBrowserRouter([
       },
 
       {
-        path: "/details/:id",
+        path: "/projects/:id",
         element: <ProjectDetails></ProjectDetails>,
         loader: ({ params }) =>
           fetch(

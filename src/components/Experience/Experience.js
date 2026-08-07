@@ -8,7 +8,7 @@ const experience = [
     highlights: [
       "Designed and built Paperlite, an in-house approval management system used across multiple departments, replacing manual, paper-based approval workflows.",
       "Streamlined cross-department request and approval processes, helping the business run more effectively, efficiently, and smoothly.",
-      "Built Radius, an internal utility suite covering meeting room reservations, a company address book, meal management, and task tracking.",
+      "Built Radius, an internal utility suite covering meeting room reservations, a company address book, meal management, and task tracking — built with ASP.NET, both REST APIs and an MVC web application.",
       "Deployed and maintained both applications on IIS and cloud infrastructure, keeping business-critical, company-wide tools reliably available.",
       "Worked directly with stakeholders across departments to gather requirements and iterate on systems used company-wide.",
     ],

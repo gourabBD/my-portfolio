@@ -44,7 +44,7 @@ const Hero = () => {
                 <div className="mt-6 space-y-3 text-slate-300">
                   <p>• Responsive interfaces with React, Next.js, and Tailwind CSS</p>
                   <p>• MSSQL-backed data models and performance-minded queries</p>
-                  <p>• REST APIs, Express.js, and maintainable backend systems</p>
+                  <p>• REST APIs and MVC web apps with Express.js and ASP.NET</p>
                   <p>• Deployment on IIS and cloud platforms (Vercel, Render, Firebase)</p>
                   <p>• AI-augmented development using Claude for smarter delivery</p>
                 </div>

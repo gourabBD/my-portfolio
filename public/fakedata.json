@@ -1,0 +1,38 @@
+[
+    {
+        "specifications": ["Used react-router-dom","Firebase authentication","MongoDB CRUD operation","live data","Used environment variables"],
+        "img": "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png"
+    },
+    {
+        "title": "CSS3",
+        "img": "https://w7.pngwing.com/pngs/696/424/png-transparent-logo-css-css3-thumbnail.png"
+    },
+    {
+        "title": "Tailwind CSS",
+        "img": "https://res.cloudinary.com/arcjet-media/image/upload/v1608734952/z8hzeszc9eb3sp3vp3qc.jpg"
+    },
+    {
+        "title": "BootStrap 5",
+        "img": "https://miro.medium.com/max/400/1*onZhQJU7A3ab6V1sHfMRkQ.jpeg"
+    },
+    {
+        "title": "JavaScript",
+        "img": "https://www.computerhope.com/jargon/j/javascript.png"
+    },
+    {
+        "title": "React JS",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+    },
+    {
+        "title": "MongoDB",
+        "img": "https://www.tutorialsteacher.com/Content/images/home/mongodb.svg"
+    },
+    {
+        "title": "Express JS",
+        "img": "https://miro.medium.com/max/1400/1*XP-mZOrIqX7OsFInN2ngRQ.png"
+    },
+    {
+        "title": "node JS",
+        "img": "https://colorlib.com/wp-content/uploads/sites/2/nodejs-frameworks.png"
+    }
+]

@@ -4,8 +4,7 @@ const projectsData = [
     title: "Reseller Marketplace",
     description:
       "A three-panel marketplace for buying and selling used mobile phones, with dedicated Buyer, Seller, and Admin experiences covering listings, wishlists, order tracking, and platform-wide oversight.",
-    img:
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80",
+    img: "/reseller.png",
     img2:
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
     img3:
@@ -28,8 +27,7 @@ const projectsData = [
     title: "The Lecturer",
     description:
       "A dual-panel blogging and examination platform where admins publish and manage course content and quizzes, and viewers read blog material and take quizzes after logging in.",
-    img:
-      "https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1200&q=80",
+    img: "/lecturer.png",
     img2:
       "https://images.unsplash.com/photo-1499961368507-0c6f7b66c4d8?auto=format&fit=crop&w=1200&q=80",
     img3:
@@ -52,8 +50,7 @@ const projectsData = [
     title: "Service Desk",
     description:
       "An ITIL-aligned IT service management platform for support and ticketing workflows, built full-stack on the Next.js App Router with secure, session-based authentication.",
-    img:
-      "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80",
+    img: "/servicedesk.png",
     img2:
       "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80",
     img3:
@@ -69,6 +66,28 @@ const projectsData = [
       "Built a full-stack ITSM-style support platform using the Next.js App Router.",
       "Implemented secure authentication and session handling with NextAuth.js.",
       "Structured MongoDB-backed data models for tickets and users, deployed on Render.",
+    ],
+  },
+  {
+    _id: "radius",
+    title: "Radius",
+    description:
+      "An internal utility suite for day-to-day office operations — meeting room reservations, a company address book, meal management, and task tracking — built to simplify everyday workflows across the business.",
+    img: "/radius-placeholder.svg",
+    img2: "",
+    img3: "",
+    gitClient: "",
+    gitServer: "",
+    liveSite: "",
+    frontEnd:
+      "React / Next.js interfaces tailored for internal, day-to-day company use",
+    backEnd:
+      "MSSQL-backed services, deployed on IIS for internal company access",
+    highlights: [
+      "Built a meeting room reservation module to manage shared space bookings company-wide.",
+      "Delivered a company-wide address book directory of people and departments.",
+      "Added meal management for daily meal planning and headcount tracking.",
+      "Built a task tracker for assigning, tracking, and closing day-to-day team tasks.",
     ],
   },
 ];

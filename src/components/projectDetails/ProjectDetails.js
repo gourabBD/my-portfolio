@@ -25,6 +25,11 @@ const ProjectDetails = () => {
     AOS.init({ duration: 800, once: true });
   }, []);
 
+  const images = [img, img2, img3].filter(Boolean);
+  const hasLinks = gitClient || gitServer || liveSite;
+  const galleryCols =
+    images.length === 1 ? "lg:grid-cols-1 max-w-xl mx-auto" : images.length === 2 ? "lg:grid-cols-2" : "lg:grid-cols-3";
+
   return (
     <section className="min-h-screen bg-[#020617] px-6 py-12 text-slate-100 lg:px-16">
       <div className="mx-auto max-w-6xl rounded-[2rem] border border-slate-800/80 bg-slate-900/90 p-10 shadow-2xl">
@@ -36,12 +41,12 @@ const ProjectDetails = () => {
           </p>
         </header>
 
-        <div className="grid gap-6 lg:grid-cols-3">
-          {[img, img2, img3].map((image, index) => (
+        <div className={`grid gap-6 ${galleryCols}`}>
+          {images.map((image, index) => (
             <PhotoProvider key={index}>
               <PhotoView src={image}>
                 <div data-aos="zoom-in" className="overflow-hidden rounded-3xl border border-slate-800/80 bg-[#020617]/70">
-                  <img src={image} alt={`${title} screenshot ${index + 1}`} className="h-64 w-full object-cover" />
+                  <img src={image} alt={`${title} screenshot ${index + 1}`} className="h-64 w-full object-cover object-top" />
                 </div>
               </PhotoView>
             </PhotoProvider>
@@ -81,6 +86,11 @@ const ProjectDetails = () => {
             <a href={liveSite} target="_blank" rel="noreferrer" className="btn btn-outline btn-wide">
               Live Demo <FaLink className="ml-2" />
             </a>
+          )}
+          {!hasLinks && (
+            <p className="max-w-2xl text-center text-sm text-slate-500">
+              Internal company project — not publicly available. Due to company privacy, I'm unable to share source code, live access, or internal screenshots for this system.
+            </p>
           )}
         </div>
       </div>

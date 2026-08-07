@@ -6,6 +6,7 @@ import Projects from "../Projects/Projects";
 import ContactMe from "../ContactMe/ContactMe";
 import Skills from "../skills/Skills";
 import AboutME from "../Aboutme/AboutME";
+import Experience from "../Experience/Experience";
 import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
@@ -33,7 +34,7 @@ const Hero = () => {
                 </div>
               </div>
               <div className="mt-8 text-center lg:text-left">
-                <p className="text-sm uppercase tracking-[0.32em] text-primary">MERN Stack Developer</p>
+                <p className="text-sm uppercase tracking-[0.32em] text-primary">Full-Stack Developer</p>
                 <h1 className="mt-4 text-4xl lg:text-5xl font-semibold tracking-tight text-white">
                   Hi, I’m Gourab Roy.
                 </h1>
@@ -42,8 +43,9 @@ const Hero = () => {
                 </p>
                 <div className="mt-6 space-y-3 text-slate-300">
                   <p>• Responsive interfaces with React, Next.js, and Tailwind CSS</p>
-                  <p>• SQL-backed data models and performance-minded queries</p>
+                  <p>• MSSQL-backed data models and performance-minded queries</p>
                   <p>• REST APIs, Express.js, and maintainable backend systems</p>
+                  <p>• Deployment on IIS and cloud platforms (Vercel, Render, Firebase)</p>
                   <p>• AI-augmented development using Claude for smarter delivery</p>
                 </div>
                 <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
@@ -70,9 +72,11 @@ const Hero = () => {
             <div className="mt-8 text-5xl font-bold leading-tight tracking-tight text-white">
               <TypeAnimation
                 sequence={[
-                  'MERN Stack Developer',
+                  'Full-Stack Developer',
                   1800,
-                  'Front-End Craftsman',
+                  'Next.js Developer',
+                  1800,
+                  'React Specialist',
                   1800,
                   'UX-Focused Problem Solver',
                   1800,
@@ -108,6 +112,7 @@ const Hero = () => {
       </section>
 
       <AboutME />
+      <Experience />
       <Skills />
       <Projects />
       <div className="flex justify-center">

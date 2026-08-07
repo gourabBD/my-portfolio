@@ -12,13 +12,13 @@ const AboutME = () => {
         <div className="grid gap-10 lg:grid-cols-2 text-slate-300">
           <div className="space-y-4 text-base leading-8">
             <p>
-              I am a MERN stack developer with 3+ years of software development experience and a B.Sc. in Computer Science & Engineering from Bangladesh Army International University of Science & Technology. I specialize in building scalable applications that combine performance, accessibility, and polished user experiences.
+              I am a full-stack developer with 3+ years of software development experience and a B.Sc. in Computer Science & Engineering from Bangladesh Army International University of Science & Technology. I specialize in building scalable applications that combine performance, accessibility, and polished user experiences.
             </p>
             <p>
-              I apply SQL, React, Next.js, and Claude-powered workflows to build dependable systems with clean interfaces, strong backend architecture, and thoughtful team collaboration.
+              I apply React, Next.js, MSSQL, and Claude-powered workflows to build dependable systems with clean interfaces, strong backend architecture, and thoughtful team collaboration — deploying to both IIS and cloud platforms depending on what the business needs.
             </p>
             <p>
-              My experience includes a software development internship at TechnoHaven Company Ltd. and analytical work in Risk & Compliance at ServicEngine BPO Ltd. These roles sharpened my ability to deliver dependable systems and strong communication across teams.
+              At Radiant Pharmaceuticals Ltd., I built and maintain an in-house approval system spanning multiple departments, helping the business run more effectively, efficiently, and smoothly. See the full experience timeline below.
             </p>
           </div>
 
@@ -26,8 +26,8 @@ const AboutME = () => {
             <div className="rounded-3xl border border-primary/30 bg-slate-900/80 p-6 shadow-lg">
               <h3 className="text-xl font-semibold text-white">What I deliver</h3>
               <ul className="mt-4 space-y-3 text-slate-300">
-                <li>• Clean React interfaces with responsive layout and modern UI patterns</li>
-                <li>• Backend services in Express & MongoDB with secure data flows</li>
+                <li>• Clean React & Next.js interfaces with responsive layout and modern UI patterns</li>
+                <li>• Backend services with MSSQL/MongoDB and secure data flows</li>
                 <li>• Collaboration-ready code and deployment-ready engineering practices</li>
               </ul>
             </div>

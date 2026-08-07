@@ -80,14 +80,15 @@ const projectsData = [
     gitServer: "",
     liveSite: "",
     frontEnd:
-      "React / Next.js interfaces tailored for internal, day-to-day company use",
+      "ASP.NET MVC (Razor views) for the internal web application UI",
     backEnd:
-      "MSSQL-backed services, deployed on IIS for internal company access",
+      "ASP.NET Web APIs, MSSQL-backed services, deployed on IIS for internal company access",
     highlights: [
       "Built a meeting room reservation module to manage shared space bookings company-wide.",
       "Delivered a company-wide address book directory of people and departments.",
       "Added meal management for daily meal planning and headcount tracking.",
       "Built a task tracker for assigning, tracking, and closing day-to-day team tasks.",
+      "Built with ASP.NET — both REST APIs and the MVC web application.",
     ],
   },
 ];

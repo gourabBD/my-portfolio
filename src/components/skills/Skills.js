@@ -32,6 +32,10 @@ const skills = [
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
   },
   {
+    title: "ASP.NET",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-plain.svg",
+  },
+  {
     title: "Claude AI",
     img: "/claude-icon.svg",
   },

@@ -18,7 +18,7 @@ const ProjectsCards = ({ product }) => {
             <img
               src={img}
               alt={title}
-              className="h-72 w-full object-cover transition duration-500 group-hover:scale-105"
+              className="h-72 w-full object-cover object-top transition duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-x-0 top-0 flex justify-between p-4">
               <span className="rounded-full border border-white/20 bg-black/40 px-3 py-1 text-xs uppercase tracking-[0.24em] text-white/90">

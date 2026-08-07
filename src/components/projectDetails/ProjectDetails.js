@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
 import { FaGithub, FaLink } from "react-icons/fa";
 import AOS from "aos";
@@ -9,6 +9,7 @@ import "react-photo-view/dist/react-photo-view.css";
 const ProjectDetails = () => {
   const product = useLoaderData();
   const {
+    title,
     img,
     img2,
     img3,
@@ -18,88 +19,72 @@ const ProjectDetails = () => {
     description,
     frontEnd,
     backEnd,
-  } = product;
-  AOS.init();
-  AOS.refresh();
+  } = product || {};
+
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
   return (
-    <div>
-      <h1 className="text-2xl">{product?.title}</h1>
-      <div>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 p-5">
-          <PhotoProvider>
-            <PhotoView src={img}>
-            <img
-            data-aos="flip-right"
-            className="h-60 w-full border border-primary"
-            src={img}
-            alt=""
-          />
-            </PhotoView>
-          </PhotoProvider>
-          <PhotoProvider>
-            <PhotoView src={img2}>
-            <img
-            data-aos="flip-right"
-            className="h-60 w-full border border-primary"
-            src={img2}
-            alt=""
-          />
-            </PhotoView>
-          </PhotoProvider>
-          <PhotoProvider>
-            <PhotoView src={img3}>
-            <img
-            data-aos="flip-right"
-            className="h-60 w-full border border-primary"
-            src={img3}
-            alt=""
-          />
-            </PhotoView>
-          </PhotoProvider>
-        
-       
-        </div>
-        <div className="flex justify-center p-5">
-          <p className="lg:w-3/4">{description}</p>
-        </div>
-        <div className="flex justify-center p-5">
-          <p className="lg:w-3/4">
-            <span className="font-bold">Front-end:</span>{" "}
-            <span>{frontEnd}</span>
+    <section className="min-h-screen bg-[#020617] px-6 py-12 text-slate-100 lg:px-16">
+      <div className="mx-auto max-w-6xl rounded-[2rem] border border-slate-800/80 bg-slate-900/90 p-10 shadow-2xl">
+        <header className="mb-10 text-center">
+          <p className="text-sm uppercase tracking-[0.32em] text-primary">Project Overview</p>
+          <h1 className="mt-4 text-4xl font-semibold">{title}</h1>
+          <p className="mx-auto mt-4 max-w-3xl text-slate-400">
+            A detailed look at the work, tools, and architecture behind this project.
           </p>
+        </header>
+
+        <div className="grid gap-6 lg:grid-cols-3">
+          {[img, img2, img3].map((image, index) => (
+            <PhotoProvider key={index}>
+              <PhotoView src={image}>
+                <div data-aos="zoom-in" className="overflow-hidden rounded-3xl border border-slate-800/80 bg-[#020617]/70">
+                  <img src={image} alt={`${title} screenshot ${index + 1}`} className="h-64 w-full object-cover" />
+                </div>
+              </PhotoView>
+            </PhotoProvider>
+          ))}
         </div>
-        <div className="flex justify-center p-5">
-          <p className="lg:w-3/4">
-            <span className="font-bold">Back-end:</span> <span>{backEnd}</span>
-          </p>
-        </div>
-        <div className="flex justify-center p-5 m-5">
-          <div className="card-actions justify-end my-5">
-            <a
-              data-aos="zoom-out-right"
-              href={gitClient}
-              className="btn btn-xs btn-outline"
-            >
-              GitHub Client <FaGithub className="mx-2"></FaGithub>
-            </a>
-            <a
-              data-aos="zoom-out-right"
-              href={gitServer}
-              className="btn btn-xs btn-outline"
-            >
-              GitHub Server <FaGithub className="mx-2"></FaGithub>
-            </a>
-            <a
-              data-aos="zoom-out-right"
-              href={liveSite}
-              className="btn btn-xs btn-outline"
-            >
-              Live Site <FaLink className="mx-2"></FaLink>
-            </a>
+
+        <div className="mt-12 grid gap-10 lg:grid-cols-2">
+          <div className="rounded-3xl border border-slate-800/80 bg-[#020617]/70 p-8">
+            <h2 className="text-2xl font-semibold text-white">Project Summary</h2>
+            <p className="mt-4 leading-8 text-slate-300">{description}</p>
+          </div>
+
+          <div className="space-y-6">
+            <div className="rounded-3xl border border-slate-800/80 bg-[#020617]/70 p-8">
+              <h3 className="text-xl font-semibold text-white">Front-end Stack</h3>
+              <p className="mt-4 text-slate-300">{frontEnd}</p>
+            </div>
+            <div className="rounded-3xl border border-slate-800/80 bg-[#020617]/70 p-8">
+              <h3 className="text-xl font-semibold text-white">Back-end Stack</h3>
+              <p className="mt-4 text-slate-300">{backEnd}</p>
+            </div>
           </div>
         </div>
+
+        <div className="mt-12 flex flex-wrap justify-center gap-4">
+          {gitClient && (
+            <a href={gitClient} target="_blank" rel="noreferrer" className="btn btn-primary btn-wide">
+              {gitServer ? "GitHub Client" : "GitHub Repo"} <FaGithub className="ml-2" />
+            </a>
+          )}
+          {gitServer && (
+            <a href={gitServer} target="_blank" rel="noreferrer" className="btn btn-outline btn-wide">
+              GitHub Server <FaGithub className="ml-2" />
+            </a>
+          )}
+          {liveSite && (
+            <a href={liveSite} target="_blank" rel="noreferrer" className="btn btn-outline btn-wide">
+              Live Demo <FaLink className="ml-2" />
+            </a>
+          )}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -8,6 +8,23 @@ module.exports = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["light", "dark", "cupcake", "bumblebee", "emerald", "corporate", "synthwave", "retro", "cyberpunk", "valentine", "halloween", "garden", "forest", "aqua", "lofi", "pastel", "fantasy", "wireframe", "black", "luxury", "dracula", "cmyk", "autumn", "business", "acid", "lemonade", "night", "coffee", "winter"],
+    themes: [
+      {
+        portfolio: {
+          primary: "#3B82F6",
+          secondary: "#06B6D4",
+          accent: "#8B5CF6",
+          neutral: "#0F172A",
+          "base-100": "#0B1120",
+          "base-200": "#0F172A",
+          "base-300": "#1E293B",
+          "base-content": "#E2E8F0",
+          info: "#0EA5E9",
+          success: "#22C55E",
+          warning: "#F59E0B",
+          error: "#EF4444",
+        },
+      },
+    ],
   },
 }

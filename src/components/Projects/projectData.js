@@ -68,6 +68,28 @@ const projectsData = [
       "Structured MongoDB-backed data models for tickets and users, deployed on Render.",
     ],
   },
+  {
+    _id: "radius",
+    title: "Radius",
+    description:
+      "An internal utility suite for day-to-day office operations — meeting room reservations, a company address book, meal management, and task tracking — built to simplify everyday workflows across the business.",
+    img: "/radius-placeholder.svg",
+    img2: "",
+    img3: "",
+    gitClient: "",
+    gitServer: "",
+    liveSite: "",
+    frontEnd:
+      "React / Next.js interfaces tailored for internal, day-to-day company use",
+    backEnd:
+      "MSSQL-backed services, deployed on IIS for internal company access",
+    highlights: [
+      "Built a meeting room reservation module to manage shared space bookings company-wide.",
+      "Delivered a company-wide address book directory of people and departments.",
+      "Added meal management for daily meal planning and headcount tracking.",
+      "Built a task tracker for assigning, tracking, and closing day-to-day team tasks.",
+    ],
+  },
 ];
 
 export default projectsData;

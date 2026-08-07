@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1120"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="10%" cy="10%" r="60%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="95%" cy="90%" r="60%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <rect width="1200" height="500" fill="url(#glow1)"/>
+  <rect width="1200" height="500" fill="url(#glow2)"/>
+
+  <text x="60" y="110" font-family="Arial, sans-serif" font-size="52" font-weight="700" fill="#E2E8F0">Radius</text>
+  <text x="60" y="148" font-family="Arial, sans-serif" font-size="20" fill="#93A3B8">Internal utility suite</text>
+
+  <g font-family="Arial, sans-serif">
+    <!-- Meeting Room -->
+    <rect x="60" y="200" width="255" height="240" rx="24" fill="#111C33" stroke="#1E293B"/>
+    <circle cx="187" cy="250" r="24" fill="#0B1120"/>
+    <path d="M175 253 h24 M175 247 h24 M180 241 v22" stroke="#3B82F6" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <text x="90" y="320" font-size="21" font-weight="600" fill="#E2E8F0">Meeting Rooms</text>
+    <text x="90" y="352" font-size="15" fill="#93A3B8">Reserve and manage</text>
+    <text x="90" y="374" font-size="15" fill="#93A3B8">shared spaces</text>
+
+    <!-- Address Book -->
+    <rect x="335" y="200" width="255" height="240" rx="24" fill="#111C33" stroke="#1E293B"/>
+    <circle cx="462" cy="250" r="24" fill="#0B1120"/>
+    <rect x="450" y="238" width="24" height="28" rx="3" stroke="#06B6D4" stroke-width="3" fill="none"/>
+    <text x="365" y="320" font-size="21" font-weight="600" fill="#E2E8F0">Address Book</text>
+    <text x="365" y="352" font-size="15" fill="#93A3B8">Company-wide directory</text>
+    <text x="365" y="374" font-size="15" fill="#93A3B8">of people and departments</text>
+
+    <!-- Meal Management -->
+    <rect x="610" y="200" width="255" height="240" rx="24" fill="#111C33" stroke="#1E293B"/>
+    <circle cx="737" cy="250" r="24" fill="#0B1120"/>
+    <circle cx="737" cy="250" r="11" stroke="#8B5CF6" stroke-width="3" fill="none"/>
+    <text x="640" y="320" font-size="21" font-weight="600" fill="#E2E8F0">Meal Management</text>
+    <text x="640" y="352" font-size="15" fill="#93A3B8">Daily meal planning and</text>
+    <text x="640" y="374" font-size="15" fill="#93A3B8">headcount tracking</text>
+
+    <!-- Task Tracker -->
+    <rect x="885" y="200" width="255" height="240" rx="24" fill="#111C33" stroke="#1E293B"/>
+    <circle cx="1012" cy="250" r="24" fill="#0B1120"/>
+    <path d="M1001 250 l7 7 l14 -16" stroke="#22C55E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="915" y="320" font-size="21" font-weight="600" fill="#E2E8F0">Task Tracker</text>
+    <text x="915" y="352" font-size="15" fill="#93A3B8">Assign, track, and close</text>
+    <text x="915" y="374" font-size="15" fill="#93A3B8">day-to-day team tasks</text>
+  </g>
+</svg>

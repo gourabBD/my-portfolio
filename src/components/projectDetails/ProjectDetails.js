@@ -41,7 +41,7 @@ const ProjectDetails = () => {
             <PhotoProvider key={index}>
               <PhotoView src={image}>
                 <div data-aos="zoom-in" className="overflow-hidden rounded-3xl border border-slate-800/80 bg-[#020617]/70">
-                  <img src={image} alt={`${title} screenshot ${index + 1}`} className="h-64 w-full object-cover" />
+                  <img src={image} alt={`${title} screenshot ${index + 1}`} className="h-64 w-full object-cover object-top" />
                 </div>
               </PhotoView>
             </PhotoProvider>

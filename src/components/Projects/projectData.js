@@ -5,10 +5,8 @@ const projectsData = [
     description:
       "A three-panel marketplace for buying and selling used mobile phones, with dedicated Buyer, Seller, and Admin experiences covering listings, wishlists, order tracking, and platform-wide oversight.",
     img: "/reseller.png",
-    img2:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
-    img3:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
+    img2: "",
+    img3: "",
     gitClient: "https://github.com/gourabBD/reseller-client",
     gitServer: "https://github.com/gourabBD/reseller-server",
     liveSite: "https://reseller-client-main.vercel.app/",
@@ -28,10 +26,8 @@ const projectsData = [
     description:
       "A dual-panel blogging and examination platform where admins publish and manage course content and quizzes, and viewers read blog material and take quizzes after logging in.",
     img: "/lecturer.png",
-    img2:
-      "https://images.unsplash.com/photo-1499961368507-0c6f7b66c4d8?auto=format&fit=crop&w=1200&q=80",
-    img3:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
+    img2: "",
+    img3: "",
     gitClient: "https://github.com/gourabBD/the-lecturer-client",
     gitServer: "https://github.com/gourabBD/the-lecturer-server",
     liveSite: "https://the-lecturer-3d2e4.web.app/",
@@ -51,10 +47,8 @@ const projectsData = [
     description:
       "An ITIL-aligned IT service management platform for support and ticketing workflows, built full-stack on the Next.js App Router with secure, session-based authentication.",
     img: "/servicedesk.png",
-    img2:
-      "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80",
-    img3:
-      "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=80",
+    img2: "",
+    img3: "",
     gitClient: "https://github.com/gourabBD/servicedesk",
     gitServer: "",
     liveSite: "https://servicedesk-1-mk1g.onrender.com/login",
@@ -66,6 +60,28 @@ const projectsData = [
       "Built a full-stack ITSM-style support platform using the Next.js App Router.",
       "Implemented secure authentication and session handling with NextAuth.js.",
       "Structured MongoDB-backed data models for tickets and users, deployed on Render.",
+    ],
+  },
+  {
+    _id: "tuition-me",
+    title: "TuitionMe",
+    description:
+      "A modern, Udemy-style course marketplace where students can browse tutoring services, read verified reviews, and enroll — and instructors can list their own courses.",
+    img: "/tuitionme.png",
+    img2: "",
+    img3: "",
+    gitClient: "https://github.com/gourabBD/tuition-me-client",
+    gitServer: "https://github.com/gourabBD/tuition-me-server",
+    liveSite: "https://tuition-me.web.app/",
+    frontEnd:
+      "React 18, React Router v6.4 (data routers with loaders & errorElement), Firebase Authentication, Bootstrap 5 / React-Bootstrap, react-hot-toast, a custom light/dark theme system, deployed on Firebase Hosting",
+    backEnd:
+      "Node.js, Express 4, MongoDB (native driver, Atlas-hosted), Stripe Checkout for payments, Helmet, express-rate-limit, Morgan, CORS, deployed as serverless functions on Vercel",
+    highlights: [
+      "Built a lazy, memoized MongoDB connection tuned for serverless cold starts.",
+      "Implemented server-side content gating — paid course content is excluded via projection until enrollment is verified.",
+      "Integrated Stripe Checkout with verify-on-return handling instead of relying on webhooks.",
+      "Built a client-side fetch wrapper with timeout and automatic retry on transient network failures.",
     ],
   },
   {

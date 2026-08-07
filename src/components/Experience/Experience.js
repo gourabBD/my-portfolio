@@ -15,11 +15,11 @@ const experience = [
     note: "Due to company privacy, I'm unable to share source code, live access, or internal screenshots for Paperlite and Radius.",
   },
   {
-    role: "Software Development Intern",
+    role: "Project Implementation Officer (Intern)",
     company: "TechnoHaven Company Ltd.",
     duration: "Internship",
     highlights: [
-      "Contributed to software development projects, building foundational experience in production coding practices and team collaboration.",
+      "Supported the implementation of the RAJUK construction-permit automation system, building foundational experience in production rollouts and team collaboration.",
     ],
   },
   {

@@ -8,7 +8,6 @@ const Navbar = () => {
       <div className="navbar-start">
         <Link to="/" className="flex items-center gap-3">
           <img className="h-12 w-auto" src={sign} alt="Gourab Roy signature" />
-          <span className="hidden md:inline text-lg font-semibold tracking-wide text-white">Gourab Roy</span>
         </Link>
       </div>
 

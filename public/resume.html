@@ -1,0 +1,463 @@
+<title>Gourab Roy — Resume</title>
+<style>
+  :root {
+    --page-bg: #EEEBE3;
+    --paper: #FFFFFF;
+    --ink: #000000;
+    --ink-soft: #000000;
+    --ink-faint: #1A1A1A;
+    --accent: #1F5F5B;
+    --accent-soft: #E3EEEC;
+    --rule: #DCE0DF;
+    --link: #1F5F5B;
+    --shadow: rgba(28, 32, 39, 0.16);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --page-bg: #14171B;
+      --shadow: rgba(0, 0, 0, 0.5);
+    }
+  }
+  :root[data-theme="dark"] {
+    --page-bg: #14171B;
+    --shadow: rgba(0, 0, 0, 0.5);
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--page-bg);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 16px 64px;
+  }
+
+  .sheet {
+    width: 8.5in;
+    max-width: 100%;
+    background: var(--paper);
+    color: var(--ink);
+    box-shadow: 0 18px 50px var(--shadow);
+    padding: 0.5in 0.6in 0.42in;
+  }
+
+  a { color: inherit; }
+
+  /* ---------- Header ---------- */
+  .head {
+    text-align: center;
+    padding-bottom: 11px;
+    border-bottom: 2px solid var(--accent);
+  }
+
+  .name {
+    font-family: Georgia, "Cambria", "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .title {
+    margin-top: 3px;
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .contacts {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6px 4px;
+    font-size: 10px;
+    color: var(--ink-soft);
+  }
+
+  .contacts .sep { color: var(--rule); }
+
+  .contact-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+
+  a.contact-item:hover { color: var(--accent); }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    background: var(--accent);
+    color: #fff;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0;
+    flex: none;
+  }
+
+  .icon {
+    width: 12px;
+    height: 12px;
+    flex: none;
+    stroke: var(--accent);
+    fill: none;
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* ---------- Sections ---------- */
+  section { margin-top: 13px; }
+
+  h2 {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 7px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  /* ---------- Skills ---------- */
+  .skills-row {
+    display: grid;
+    grid-template-columns: 108px 1fr;
+    gap: 4px 10px;
+    font-size: 10px;
+    line-height: 1.48;
+  }
+  .skills-row dt { font-weight: 700; color: var(--ink); }
+  .skills-row dd { margin: 0; color: var(--ink-soft); }
+
+  /* ---------- Projects ---------- */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 22px;
+  }
+
+  .proj-card.full { grid-column: 1 / -1; }
+
+  .proj-name {
+    font-size: 10.8px;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 0 0 1px;
+  }
+
+  .proj-desc {
+    font-size: 9.6px;
+    color: var(--ink-soft);
+    line-height: 1.38;
+    margin: 0 0 3px;
+  }
+
+  .proj-stack {
+    font-size: 9.4px;
+    line-height: 1.4;
+    color: var(--ink);
+    margin: 0 0 3px;
+  }
+  .proj-stack b { font-weight: 700; }
+  .proj-stack .sp { color: var(--ink-faint); margin: 0 4px; }
+
+  .proj-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px 10px;
+    font-size: 9.4px;
+  }
+
+  .link-chip {
+    color: var(--link);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--accent-soft);
+    text-underline-offset: 2px;
+  }
+
+  .proj-note {
+    font-size: 9.6px;
+    font-style: italic;
+    color: var(--ink-faint);
+  }
+
+  /* ---------- Experience ---------- */
+  .job { margin-bottom: 8px; }
+  .job:last-child { margin-bottom: 0; }
+
+  .job-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  .job-org { font-size: 10.8px; font-weight: 700; color: var(--ink); }
+
+  .job-period {
+    font-size: 9.4px;
+    color: var(--ink-faint);
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .job-role {
+    font-size: 10px;
+    font-style: italic;
+    color: var(--accent);
+    margin: 1px 0 3px;
+  }
+
+  .job ul {
+    margin: 0;
+    padding-left: 15px;
+    font-size: 9.8px;
+    line-height: 1.42;
+    color: var(--ink-soft);
+  }
+  .job ul li { margin-bottom: 1px; }
+
+  .job-note {
+    margin: 3px 0 0;
+    font-size: 9.2px;
+    font-style: italic;
+    color: var(--ink-faint);
+  }
+
+  /* ---------- Education ---------- */
+  .edu-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .edu-school { font-size: 10.8px; font-weight: 700; }
+  .edu-year { font-size: 9.4px; color: var(--ink-faint); font-variant-numeric: tabular-nums; }
+  .edu-degree { font-size: 10px; color: var(--ink-soft); margin-top: 1px; }
+
+  /* ---------- Languages ---------- */
+  .lang-row { font-size: 10px; color: var(--ink-soft); }
+  .lang-row b { color: var(--ink); font-weight: 700; }
+
+  /* ---------- Print button ---------- */
+  .print-btn {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 12.5px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 6px 16px var(--shadow);
+  }
+  .print-btn:hover { filter: brightness(1.08); }
+  .print-btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+  @media print {
+    .print-btn { display: none; }
+    html, body { background: #fff; padding: 0; }
+    .sheet { width: auto; box-shadow: none; padding: 0.3in 0.45in; }
+    @page { size: letter; margin: 0; }
+  }
+</style>
+
+<button class="print-btn" onclick="window.print()" aria-label="Print or save as PDF">
+  <svg class="icon" style="stroke:#fff" viewBox="0 0 24 24"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+  Save as PDF
+</button>
+
+<div class="sheet">
+
+  <header class="head">
+    <h1 class="name">Gourab Roy</h1>
+    <div class="title">Full-Stack Developer</div>
+    <div class="contacts">
+      <a class="contact-item" href="https://www.linkedin.com/in/gourab-roy-369ab5179/" target="_blank" rel="noopener noreferrer">
+        <span class="badge">in</span>LinkedIn
+      </a>
+      <span class="sep">·</span>
+      <a class="contact-item" href="https://github.com/gourabBD" target="_blank" rel="noopener noreferrer">
+        <span class="badge">GH</span>GitHub
+      </a>
+      <span class="sep">·</span>
+      <a class="contact-item" href="https://www.behance.net/gourabroy" target="_blank" rel="noopener noreferrer">
+        <span class="badge">Bē</span>Behance
+      </a>
+      <span class="sep">·</span>
+      <span class="contact-item">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        Dhaka, Bangladesh
+      </span>
+      <span class="sep">·</span>
+      <a class="contact-item" href="mailto:rgourab02@gmail.com">
+        <svg class="icon" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 6-10 7L2 6"></path></svg>
+        rgourab02@gmail.com
+      </a>
+      <span class="sep">·</span>
+      <span class="contact-item">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92Z"></path></svg>
+        +880 1688 237444
+      </span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Skills</h2>
+    <dl class="skills-row">
+      <dt>Languages</dt>
+      <dd>C Programming, HTML5, CSS3, JavaScript, SQL</dd>
+      <dt>Technologies</dt>
+      <dd>React JS, Next JS, Node JS, Express JS, MongoDB, ASP.NET (MVC &amp; Web API), MSSQL, NextAuth.js, Stripe, Firebase Authentication, Bootstrap 5, Tailwind CSS, Photoshop, Illustrator</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+      <div class="proj-card">
+        <p class="proj-name">Reseller Marketplace</p>
+        <p class="proj-desc">Three-panel marketplace for used mobile phones — Buyer, Seller &amp; Admin, with listings, wishlists, and order tracking.</p>
+        <p class="proj-stack"><b>Front-end:</b> React.js, Context API, Tailwind CSS, Firebase Auth<span class="sp">·</span><b>Back-end:</b> Node.js, Express, MongoDB</p>
+        <div class="proj-links">
+          <a class="link-chip" href="https://reseller-client-main.vercel.app/" target="_blank" rel="noopener noreferrer">Live Site</a>
+          <a class="link-chip" href="https://github.com/gourabBD/reseller-client" target="_blank" rel="noopener noreferrer">Client Repo</a>
+          <a class="link-chip" href="https://github.com/gourabBD/reseller-server" target="_blank" rel="noopener noreferrer">Server Repo</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <p class="proj-name">The Lecturer</p>
+        <p class="proj-desc">Dual-panel blogging &amp; examination platform — admins publish content and quizzes, viewers read and take quizzes after login.</p>
+        <p class="proj-stack"><b>Front-end:</b> React.js, Tailwind, DaisyUI, React-Quill, Firebase Auth<span class="sp">·</span><b>Back-end:</b> Node.js, Express, MongoDB</p>
+        <div class="proj-links">
+          <a class="link-chip" href="https://the-lecturer-3d2e4.firebaseapp.com/" target="_blank" rel="noopener noreferrer">Live Site</a>
+          <a class="link-chip" href="https://github.com/gourabBD/the-lecturer-client" target="_blank" rel="noopener noreferrer">Client Repo</a>
+          <a class="link-chip" href="https://github.com/gourabBD/the-lecturer-server" target="_blank" rel="noopener noreferrer">Server Repo</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <p class="proj-name">Service Desk</p>
+        <p class="proj-desc">ITIL-aligned IT service management &amp; ticketing platform, built full-stack on the Next.js App Router with session-based auth.</p>
+        <p class="proj-stack"><b>Front-end:</b> Next.js (App Router), React<span class="sp">·</span><b>Back-end:</b> Next.js API routes, NextAuth.js, MongoDB</p>
+        <div class="proj-links">
+          <a class="link-chip" href="https://servicedesk-1-mk1g.onrender.com/login" target="_blank" rel="noopener noreferrer">Live Site</a>
+          <a class="link-chip" href="https://github.com/gourabBD/servicedesk" target="_blank" rel="noopener noreferrer">Repo</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <p class="proj-name">TuitionMe</p>
+        <p class="proj-desc">Udemy-style course marketplace — students browse, read reviews, and enroll; instructors list their own courses.</p>
+        <p class="proj-stack"><b>Front-end:</b> React 18, React Router v6.4, Firebase Auth, Bootstrap 5<span class="sp">·</span><b>Back-end:</b> Node.js, Express, MongoDB, Stripe Checkout</p>
+        <div class="proj-links">
+          <a class="link-chip" href="https://tuition-me.firebaseapp.com/" target="_blank" rel="noopener noreferrer">Live Site</a>
+          <a class="link-chip" href="https://github.com/gourabBD/tuition-me-client" target="_blank" rel="noopener noreferrer">Client Repo</a>
+          <a class="link-chip" href="https://github.com/gourabBD/tuition-me-server" target="_blank" rel="noopener noreferrer">Server Repo</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <p class="proj-name">Paperlite</p>
+        <p class="proj-desc">In-house approval management system used across multiple departments, replacing manual, paper-based approval workflows and streamlining cross-department requests.</p>
+        <p class="proj-stack"><b>Stack:</b> Next.js (full-stack, App Router &amp; API routes), MSSQL, deployed on IIS</p>
+        <p class="proj-note">Internal company tool — source code and live access are not publicly available.</p>
+      </div>
+
+      <div class="proj-card">
+        <p class="proj-name">Radius</p>
+        <p class="proj-desc">Internal utility suite for day-to-day office operations — meeting room reservations, company address book, meal management, and task tracking.</p>
+        <p class="proj-stack"><b>Front-end:</b> ASP.NET MVC (Razor)<span class="sp">·</span><b>Back-end:</b> ASP.NET Web API, MSSQL, deployed on IIS</p>
+        <p class="proj-note">Internal company tool — source code and live access are not publicly available.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="job-top">
+        <span class="job-org">Radiant Pharmaceuticals Ltd.</span>
+        <span class="job-period">Sep 2023 – Present</span>
+      </div>
+      <p class="job-role">Full-Stack Web Developer</p>
+      <ul>
+        <li>Designed and built Paperlite, a full-stack Next.js approval management system with an MSSQL database, replacing manual, paper-based workflows across departments.</li>
+        <li>Built Radius, an internal utility suite (room booking, address book, meals, task tracking) with ASP.NET REST APIs and MVC.</li>
+        <li>Deployed and maintained both applications on IIS and cloud infrastructure for company-wide use.</li>
+      </ul>
+      <p class="job-note">Due to company privacy, source code and live access for Paperlite and Radius aren't publicly shareable.</p>
+    </div>
+
+    <div class="job">
+      <div class="job-top">
+        <span class="job-org">ServicEngine BPO Ltd.</span>
+        <span class="job-period">Apr 2021 – Mar 2022</span>
+      </div>
+      <p class="job-role">Risk &amp; Compliance Analyst</p>
+      <ul>
+        <li>Analyzed data provided by clients to identify and reduce their operational risk exposure.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-top">
+        <span class="job-org">Technohaven Company Ltd.</span>
+        <span class="job-period">Apr 2019 – Sep 2019</span>
+      </div>
+      <p class="job-role">Project Implementation Officer (Intern)</p>
+      <ul>
+        <li>Supported the implementation of the RAJUK construction-permit automation system, building foundational experience in production rollouts and team collaboration.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="edu-top">
+      <span class="edu-school">Bangladesh Army International University of Science and Technology</span>
+      <span class="edu-year">2019</span>
+    </div>
+    <p class="edu-degree">B.Sc. in Computer Science &amp; Engineering (CSE)</p>
+  </section>
+
+  <section>
+    <h2>Languages</h2>
+    <p class="lang-row"><b>Bangla</b> (Native) &nbsp;·&nbsp; <b>English</b> &nbsp;·&nbsp; <b>Hindi</b></p>
+  </section>
+
+</div>

@@ -69,6 +69,28 @@ const projectsData = [
     ],
   },
   {
+    _id: "tuition-me",
+    title: "TuitionMe",
+    description:
+      "A modern, Udemy-style course marketplace where students can browse tutoring services, read verified reviews, and enroll — and instructors can list their own courses.",
+    img: "/tuitionme.png",
+    img2: "",
+    img3: "",
+    gitClient: "https://github.com/gourabBD/tuition-me-client",
+    gitServer: "https://github.com/gourabBD/tuition-me-server",
+    liveSite: "https://tuition-me.web.app/",
+    frontEnd:
+      "React 18, React Router v6.4 (data routers with loaders & errorElement), Firebase Authentication, Bootstrap 5 / React-Bootstrap, react-hot-toast, a custom light/dark theme system, deployed on Firebase Hosting",
+    backEnd:
+      "Node.js, Express 4, MongoDB (native driver, Atlas-hosted), Stripe Checkout for payments, Helmet, express-rate-limit, Morgan, CORS, deployed as serverless functions on Vercel",
+    highlights: [
+      "Built a lazy, memoized MongoDB connection tuned for serverless cold starts.",
+      "Implemented server-side content gating — paid course content is excluded via projection until enrollment is verified.",
+      "Integrated Stripe Checkout with verify-on-return handling instead of relying on webhooks.",
+      "Built a client-side fetch wrapper with timeout and automatic retry on transient network failures.",
+    ],
+  },
+  {
     _id: "radius",
     title: "Radius",
     description:

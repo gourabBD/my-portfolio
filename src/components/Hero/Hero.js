@@ -50,7 +50,7 @@ const Hero = () => {
                 </div>
                 <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                   <a
-                    href="https://drive.google.com/file/d/1ODYk4zJhGb_TKEqGPyxe-bEL3IeOmXh6/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1TaBbGaWTQyT6mmb1tAflPLIEHJYnIZ8B/view?usp=sharing"
                     target="_blank"
                     rel="noreferrer"
                     className="btn btn-primary btn-wide"

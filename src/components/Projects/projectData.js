@@ -65,6 +65,29 @@ const projectsData = [
     ],
   },
   {
+    _id: "paperlite",
+    title: "Paperlite",
+    description:
+      "An in-house approval management system for Radiant Pharmaceuticals, used across multiple departments to replace manual, paper-based approval workflows with structured digital requests, multi-step routing, and full status visibility.",
+    img: "/paperlite-placeholder.svg",
+    img2: "",
+    img3: "",
+    gitClient: "",
+    gitServer: "",
+    liveSite: "",
+    frontEnd:
+      "ASP.NET MVC (Razor views) for the internal web application UI",
+    backEnd:
+      "ASP.NET Web APIs, MSSQL-backed services, deployed on IIS and cloud infrastructure for company-wide access",
+    highlights: [
+      "Designed and built an approval management system adopted across multiple departments company-wide.",
+      "Replaced manual, paper-based approval workflows with structured digital request submissions.",
+      "Implemented multi-step approval routing across departments and roles, with live status tracking.",
+      "Maintained an auditable record of every request and approval decision.",
+      "Deployed and maintained the system on IIS and cloud infrastructure as a business-critical internal tool.",
+    ],
+  },
+  {
     _id: "radius",
     title: "Radius",
     description:

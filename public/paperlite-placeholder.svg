@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1120"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="10%" cy="10%" r="60%">
+      <stop offset="0%" stop-color="#22C55E" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#22C55E" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="95%" cy="90%" r="60%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="500" fill="url(#bg)"/>
+  <rect width="1200" height="500" fill="url(#glow1)"/>
+  <rect width="1200" height="500" fill="url(#glow2)"/>
+
+  <text x="60" y="110" font-family="Arial, sans-serif" font-size="52" font-weight="700" fill="#E2E8F0">Paperlite</text>
+  <text x="60" y="148" font-family="Arial, sans-serif" font-size="20" fill="#93A3B8">Approval management system</text>
+
+  <g font-family="Arial, sans-serif">
+    <!-- Request -->
+    <rect x="60" y="200" width="255" height="240" rx="24" fill="#111C33" stroke="#1E293B"/>
+    <circle cx="187" cy="250" r="24" fill="#0B1120"/>
+    <path d="M177 238 h16 l7 7 v19 a2 2 0 0 1 -2 2 h-21 a2 2 0 0 1 -2 -2 v-24 a2 2 0 0 1 2 -2 z" stroke="#3B82F6" stroke-width="3" fill="none" stroke-linejoin="round"/>
+    <text x="90" y="320" font-size="21" font-weight="600" fill="#E2E8F0">Digital Requests</text>
+    <text x="90" y="352" font-size="15" fill="#93A3B8">Paper forms replaced by</text>
+    <text x="90" y="374" font-size="15" fill="#93A3B8">structured submissions</text>
+
+    <!-- Routing -->
+    <rect x="335" y="200" width="255" height="240" rx="24" fill="#111C33" stroke="#1E293B"/>
+    <circle cx="462" cy="250" r="24" fill="#0B1120"/>
+    <path d="M450 258 h9 a5 5 0 0 0 5 -5 v-6 a5 5 0 0 1 5 -5 h5" stroke="#06B6D4" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="450" cy="258" r="3.5" fill="#06B6D4"/>
+    <circle cx="474" cy="242" r="3.5" fill="#06B6D4"/>
+    <text x="365" y="320" font-size="21" font-weight="600" fill="#E2E8F0">Approval Routing</text>
+    <text x="365" y="352" font-size="15" fill="#93A3B8">Multi-step chains across</text>
+    <text x="365" y="374" font-size="15" fill="#93A3B8">departments and roles</text>
+
+    <!-- Tracking -->
+    <rect x="610" y="200" width="255" height="240" rx="24" fill="#111C33" stroke="#1E293B"/>
+    <circle cx="737" cy="250" r="24" fill="#0B1120"/>
+    <circle cx="737" cy="250" r="12" stroke="#8B5CF6" stroke-width="3" fill="none"/>
+    <path d="M737 243 v8 l6 4" stroke="#8B5CF6" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <text x="640" y="320" font-size="21" font-weight="600" fill="#E2E8F0">Status Tracking</text>
+    <text x="640" y="352" font-size="15" fill="#93A3B8">Live visibility into where</text>
+    <text x="640" y="374" font-size="15" fill="#93A3B8">every request stands</text>
+
+    <!-- Audit -->
+    <rect x="885" y="200" width="255" height="240" rx="24" fill="#111C33" stroke="#1E293B"/>
+    <circle cx="1012" cy="250" r="24" fill="#0B1120"/>
+    <path d="M1001 250 l7 7 l14 -16" stroke="#22C55E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="915" y="320" font-size="21" font-weight="600" fill="#E2E8F0">Audit Trail</text>
+    <text x="915" y="352" font-size="15" fill="#93A3B8">Every decision recorded</text>
+    <text x="915" y="374" font-size="15" fill="#93A3B8">and traceable</text>
+  </g>
+</svg>

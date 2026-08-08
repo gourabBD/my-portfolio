@@ -21,27 +21,6 @@ const projectsData = [
     ],
   },
   {
-    _id: "the-lecturer",
-    title: "The Lecturer",
-    description:
-      "A dual-panel blogging and examination platform where admins publish and manage course content and quizzes, and viewers read blog material and take quizzes after logging in.",
-    img: "/lecturer.png",
-    img2: "",
-    img3: "",
-    gitClient: "https://github.com/gourabBD/the-lecturer-client",
-    gitServer: "https://github.com/gourabBD/the-lecturer-server",
-    liveSite: "https://the-lecturer-3d2e4.firebaseapp.com/",
-    frontEnd:
-      "React.js, Tailwind CSS, DaisyUI, React-Quill rich text editor, React Router DOM, Firebase Authentication",
-    backEnd:
-      "Node.js, Express, MongoDB, environment-based configuration with dotenv",
-    highlights: [
-      "Built an admin panel for full blog lifecycle management and quiz creation.",
-      "Delivered a viewer experience for reading blog content and completing quizzes after login.",
-      "Added role-based user administration to promote or remove platform users.",
-    ],
-  },
-  {
     _id: "service-desk",
     title: "Service Desk",
     description:
@@ -70,18 +49,19 @@ const projectsData = [
     img: "/tuitionme.png",
     img2: "",
     img3: "",
-    gitClient: "https://github.com/gourabBD/tuition-me-client",
-    gitServer: "https://github.com/gourabBD/tuition-me-server",
-    liveSite: "https://tuition-me.firebaseapp.com/",
+    gitClient: "https://github.com/gourabBD/tuitionMe_Nextjs",
+    gitServer: "",
+    liveSite: "https://tuition-me-nextjs.vercel.app/",
     frontEnd:
-      "React 18, React Router v6.4 (data routers with loaders & errorElement), Firebase Authentication, Bootstrap 5 / React-Bootstrap, react-hot-toast, a custom light/dark theme system, deployed on Firebase Hosting",
+      "Next.js 16 (App Router, Server Components), React 19, Bootstrap 5 / React-Bootstrap, react-hot-toast, react-icons, react-photo-view, deployed on Vercel",
     backEnd:
-      "Node.js, Express 4, MongoDB (native driver, Atlas-hosted), Stripe Checkout for payments, Helmet, express-rate-limit, Morgan, CORS, deployed as serverless functions on Vercel",
+      "Next.js Route Handlers & Server Actions, Auth.js (NextAuth v5) with the MongoDB adapter, MongoDB (native driver, Atlas-hosted), bcryptjs password hashing, jose for JWTs, Zod schema validation, Stripe Checkout for payments",
     highlights: [
-      "Built a lazy, memoized MongoDB connection tuned for serverless cold starts.",
+      "Rebuilt the original CRA client and Express server as a single full-stack Next.js App Router application.",
       "Implemented server-side content gating — paid course content is excluded via projection until enrollment is verified.",
       "Integrated Stripe Checkout with verify-on-return handling instead of relying on webhooks.",
-      "Built a client-side fetch wrapper with timeout and automatic retry on transient network failures.",
+      "Handled authentication with Auth.js (NextAuth v5) over the MongoDB adapter, with bcryptjs-hashed credentials.",
+      "Validated all inbound payloads with Zod schemas shared between server actions and route handlers.",
     ],
   },
   {

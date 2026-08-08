@@ -51,7 +51,7 @@ const projectsData = [
     img3: "",
     gitClient: "https://github.com/gourabBD/tuitionMe_Nextjs",
     gitServer: "",
-    liveSite: "https://tuition-me-nextjs.vercel.app/",
+    liveSite: "https://tuition-me.onrender.com/",
     frontEnd:
       "Next.js 16 (App Router, Server Components), React 19, Bootstrap 5 / React-Bootstrap, react-hot-toast, react-icons, react-photo-view, deployed on Vercel",
     backEnd:
